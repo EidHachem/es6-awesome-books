@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeed;
+  position: relative;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.book-section {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.add-section {
+  display: none;
+  margin: 60px auto;
+  width: 80%;
+}
+
+.contact-section {
+  display: none;
+  font-size: 20px;
+}
+
+.header-nav {
+  justify-content: space-between;
+  padding: 0 10px;
+  border: 2px solid #000;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-bar {
+  gap: 20px;
+}
+
+.header-nav div {
+  cursor: pointer;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.list::after,
+.add::after {
+  content: '';
+  background-color: #000;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  margin: 0 10px;
+}
+
+.header {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-date {
+  font-size: 0.9rem;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.book-store {
+  border: 1px solid #000;
+  background-color: #b8b8b8;
+}
+
+.book-title,
+.book-author {
+  font-size: 18px;
+}
+
+.book-container {
+  padding: 10px;
+}
+
+.book-container:nth-child(2n) {
+  background-color: #fff;
+}
+
+.delete {
+  float: right;
+  box-shadow: 2px 2px 2px #000;
+  font-family: 'Patrick Hand', cursive;
+}
+
+#form {
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 25em;
+}
+
+#form h2 {
+  margin: 0 5px;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+input {
+  padding: 5px;
+  margin: 5px 0 10px;
+  border: 2px solid #000;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+}
+
+.add-btn {
+  float: right;
+  width: 50px;
+  align-self: flex-end;
+  box-shadow: 2px 2px 2px #000;
+  border: 2px solid #000;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+}
+
+.contact-section div {
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
+  border: 2px solid #000;
+  font-family: 'Patrick Hand', cursive;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
