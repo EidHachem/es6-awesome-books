@@ -1,6 +1,6 @@
 import { Book, UI, defaultBooks } from '../index.js';
 
-function addBook(e) {
+const addBook = (e) => {
   e.preventDefault();
 
   const title = document.getElementById('title').value;
@@ -18,6 +18,6 @@ function addBook(e) {
   UI.addBookToList(book);
 
   UI.clearFields();
-}
+};
 
 export { addBook };
