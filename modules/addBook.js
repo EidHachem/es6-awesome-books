@@ -1,3 +1,6 @@
+/* eslint-disable import/no-cycle */
+/* eslint-disable import/prefer-default-export */
+
 import { Book, UI, defaultBooks } from '../index.js';
 
 const addBook = (e) => {

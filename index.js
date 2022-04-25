@@ -1,6 +1,8 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
+/* eslint-disable import/no-cycle */
+/* eslint-disable import/no-mutable-exports */
 import { addBook } from './modules/addBook.js';
 import { hanldRemove } from './modules/removeBook.js';
 import { DateTime } from './modules/luxun.js';
@@ -46,8 +48,7 @@ class UI {
     if (target.classList.contains('delete')) {
       target.parentNode.remove();
     }
-    const filteredTitle =
-      target.previousElementSibling.previousElementSibling.textContent;
+    const filteredTitle = target.previousElementSibling.previousElementSibling.textContent;
 
     defaultBooks = defaultBooks.filter((book) => {
       if (book.title !== filteredTitle) {
