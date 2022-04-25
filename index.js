@@ -1,6 +1,10 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
+import { addBook } from './modules/addBook.js';
+import { hanldRemove } from './modules/removeBook.js';
+import { DateTime } from './modules/luxun.js';
+
 const bookStore = document.querySelector('.book-store');
 const form = document.getElementById('form');
 
@@ -55,16 +59,12 @@ class UI {
 
 UI.displayBooks();
 
-import { addBook } from './modules/addBook.js';
-
 form.addEventListener('submit', addBook, false);
-
-import { hanldRemove } from './modules/removeBook.js';
 
 bookStore.addEventListener('click', hanldRemove);
 
 const headerDate = document.querySelector('.header-date');
-headerDate.innerHTML = Date();
+headerDate.innerHTML = DateTime.local();
 
 const bookSection = document.querySelector('.book-section');
 const addBookSection = document.querySelector('.add-section');
