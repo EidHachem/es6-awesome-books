@@ -65,7 +65,8 @@ form.addEventListener('submit', addBook, false);
 bookStore.addEventListener('click', hanldRemove);
 
 const headerDate = document.querySelector('.header-date');
-headerDate.innerHTML = DateTime.local();
+const date = DateTime.now();
+headerDate.innerHTML = date.toLocaleString(DateTime.DATETIME_MED);
 
 const bookSection = document.querySelector('.book-section');
 const addBookSection = document.querySelector('.add-section');
