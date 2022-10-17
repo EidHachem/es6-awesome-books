@@ -96,6 +96,10 @@ body {
 
 .book-container {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .book-container:nth-child(2n) {
@@ -159,6 +163,10 @@ input {
 @media screen and (max-width: 768px) {
   .book-container {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
   }
 
   .book-section {

@@ -30,7 +30,7 @@ class UI {
     div.classList.add('book-container');
 
     div.innerHTML = `
-    <span class='book-title'>${book.title}</span> by <span class='book-author'>${book.author}</span>
+    <div><span class='book-title'>${book.title}</span> by <span class='book-author'>${book.author}</span></div>
     <button class="delete">Remove</button>`;
 
     bookStore.appendChild(div);
