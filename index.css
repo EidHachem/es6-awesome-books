@@ -155,3 +155,19 @@ input {
   position: absolute;
   bottom: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .book-container {
+    padding: 5px;
+  }
+
+  .book-section {
+    width: 95%;
+    margin-top: 5em;
+  }
+
+  .contact-section {
+    font-size: 15px;
+    margin-top: 8em;
+  }
+}
