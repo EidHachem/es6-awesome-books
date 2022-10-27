@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[You can check the live demo of my project here](https://eidhachem.github.io/es6-awesome-books/)
+[You can check the live demo of my project here](https://awesome-books-eid.netlify.app/)
 
 ### Prerequisites
 
